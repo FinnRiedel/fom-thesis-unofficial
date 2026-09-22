@@ -1,4 +1,4 @@
-#import "/lib.typ": *
+#import "@preview/fom-thesis-unofficial:0.1.0": project
 
 // META INFORMATIONEN FÜLLEN:
 #show: project.with(
