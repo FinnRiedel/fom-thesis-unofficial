@@ -10,8 +10,8 @@
   abgabedatum: "",
   
   date: none,
-  logo: "media/fomLogo.pdf",
-  bib-file: "references.yaml",
+  logo: "template/media/fomLogo.pdf",
+  bib-file: "template/references.yaml",
   abbreviations: none,
   list-of-figures: false,
   list-of-tables: false,
