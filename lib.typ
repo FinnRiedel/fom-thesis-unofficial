@@ -156,6 +156,10 @@
   [#label("end-of-preface")]
   // Label, um römische Seitenzahl zu merken und später dort weiter zu zählen
 
+  let preface-state = state("preface-state", 1)
+  context preface-state.update(counter(page).get().first())
+  // Römische Seitenzahl zwischenspeichern, vor Inhalt
+
 // Inhalt ====================================================================
 
   counter(page).update(1)
@@ -165,11 +169,9 @@
   pagebreak()
   
 // Literaturverzeichnis ======================================================
-  counter(page).update(loc => {
-    let end-page = counter(page).at(loc.select(<end-of-preface>)).first()
-    return end-page + 1
-  })
-  // Letzte römische Seitenzahl wird abgefragt und als aktuelle Seitenzahl+1 gesetzt
+  context counter(page).update(preface-state.get())
+  // Letzte römische Seitenzahl wiederherstellen
+
   set page(numbering: "I")
   if bib-file != none {
     bibliography(bib-file, title: "Literaturverzeichnis", style: "fom-chigaco-citation.csl")}
