@@ -1,4 +1,4 @@
-#import "lib.typ": *
+#import "/lib.typ": *
 
 // META INFORMATIONEN FÜLLEN:
 #show: project.with(
@@ -36,7 +36,7 @@
 = Erste Ebene
 #lorem(500)
 #figure(
-  image("media/fomLogo.pdf", width: 20%),
+  image("/media/fomLogo.pdf", width: 20%),
   caption: [FOM Logo]
 ) <fom_logo>
 
