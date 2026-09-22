@@ -11,7 +11,8 @@
   
   date: none,
   logo: "media/fomLogo.pdf",
-  bib-file: "template/references.yaml",
+  bib-file: none,
+  bib-web-file: none,
   abbreviations: none,
   list-of-figures: false,
   list-of-tables: false,
@@ -70,7 +71,8 @@
   // Code-Block als "Abbildung" deklarieren
   show figure.where(kind: raw): set figure(kind: image)
 
-
+  // Setze Zitationsstil auf "fom-chicago"
+  set bibliography(style: "fom-chigaco-citation.csl")
   
 // Titelseite ================================================================
   
@@ -153,7 +155,7 @@
     outline(title: none, target: figure.where(kind: image))
     pagebreak()
   }
-  
+
   let preface-state = state("preface-state", 1)
   context preface-state.update(counter(page).get().first())
   // Römische Seitenzahl zwischenspeichern, vor Inhalt
@@ -172,10 +174,14 @@
 
   set page(numbering: "I")
   if bib-file != none {
-    bibliography(bib-file, title: "Literaturverzeichnis", style: "fom-chigaco-citation.csl")}
+    heading("Literaturverzeichnis", numbering: none)
+    bib-file
+    }
 
 // Internetquellen ======================================================
-  //pagebreak()
-  //bibliography("literature_web.yaml", title: "Internetquellen", style: "fom-chigaco.csl")
-  
+  pagebreak()
+  if bib-web-file != none {
+    heading("Internetquellen", numbering: none)
+    bib-web-file
+    }
 }

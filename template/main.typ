@@ -17,6 +17,9 @@
 
   
   date: "March 16, 2026",
+
+  bib-file: bibliography("references.yaml"),
+  bib-web-file: bibliography("references_web.yaml"),
   abbreviations: include "abkuerzungsverz.typ",
   list-of-figures: true,
   list-of-tables: true,
@@ -32,6 +35,18 @@
 #lorem(20)
 
 == Zielsetzung
+#figure(
+  table(
+    columns: 3,
+    align: (left, center, right),
+    table.header(
+      [*Ziel*], [*Spalte 2*], [*Spalte 3*]
+    ),
+    [Super Note bekommen!], [Reihe 2], [...],
+    [Reihe 3], [uvm.], [...]
+  ),
+  caption: [Ziele der wissenschaftlichen Arbeit]
+) <academic_goals>
 #lorem(20)
 
 == Vorgehensweise
@@ -76,6 +91,8 @@ Wie man an @staedel_museum sehen kann, kann man auch Abbildungen darstellen.
 #lorem(10)@private_equity
 #lorem(10)@lemons
 #lorem(10)@vw
+#lorem(10)@kaiser2015
+#lorem(10)@theisen_ohnejahr
 
 = Fazit
 Fertig!
