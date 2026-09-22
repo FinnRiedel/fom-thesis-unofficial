@@ -1,7 +1,7 @@
 //#import "/lib.typ": * 
 //Für lokale Entwicklung bitte einkommentieren
 
-#import "@preview/fom-thesis-unofficial:0.1.0": project
+#import "@preview/fom-thesis-unofficial:0.1.0": *
 
 // META INFORMATIONEN FÜLLEN:
 #show: project.with(
