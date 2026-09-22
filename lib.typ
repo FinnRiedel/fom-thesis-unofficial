@@ -174,14 +174,12 @@
 
   set page(numbering: "I")
   if bib-file != none {
-    heading("Literaturverzeichnis", numbering: none)
     bib-file
     }
 
 // Internetquellen ======================================================
   pagebreak()
   if bib-web-file != none {
-    heading("Internetquellen", numbering: none)
     bib-web-file
     }
 }

@@ -18,8 +18,8 @@
   
   date: "March 16, 2026",
 
-  bib-file: bibliography("references.yaml"),
-  bib-web-file: bibliography("references_web.yaml"),
+  bib-file: bibliography("references.yaml", title: "Literaturverzeichnis"),
+  bib-web-file: bibliography("references_web.yaml", title: "Internetquellen"),
   abbreviations: include "abkuerzungsverz.typ",
   list-of-figures: true,
   list-of-tables: true,
