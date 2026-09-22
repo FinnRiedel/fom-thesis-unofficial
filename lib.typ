@@ -74,7 +74,10 @@
 // Titelseite ================================================================
   
   // Titelblatt ohne Nummerierung (1.2 Layout: 10)
-  set page(numbering: none)
+  set page(
+    numbering: none,
+    margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 20mm))
+  // Seitenränder temporär für Titelseite zentrieren
   
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
   if logo != none {
@@ -118,6 +121,9 @@
 
 // Table of contents =========================================================
   
+  set page(margin: (left: 40mm, right: 20mm, top: 40mm, bottom: 20mm))
+  // Seitenränder nach Titelseite wiederherstellen
+
   // Verzeichnisse mit römischen Zahlen (1.2 Layout: 10)
   set page(numbering: "I") 
   outline(depth: 3)
