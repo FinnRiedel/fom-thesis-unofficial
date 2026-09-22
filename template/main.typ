@@ -55,11 +55,11 @@
 = Erste Ebene
 #lorem(20)
 #figure(
-  image("/media/Finn_Riedel-DSCF5642.jpg", width: 20%),
-  caption: [Städel Museum, Frankfurt am Main (C) Finn Riedel]
-) <staedel_museum>
+  image("/media/Finn_Riedel_FOM_Koeln_Rheinauhafen.JPG", width: 20%),
+  caption: [FOM Aussicht, Rheinauhafen, Köln (C) Finn Riedel]
+) <fom_cgn>
 
-Wie man an @staedel_museum sehen kann, kann man auch Abbildungen darstellen.
+Wie man an @fom_cgn sehen kann, kann man auch Abbildungen darstellen.
 
 == Zweite Ebene
 #lorem(20)
