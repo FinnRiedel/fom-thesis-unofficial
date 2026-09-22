@@ -91,7 +91,6 @@ Wie man an @staedel_museum sehen kann, kann man auch Abbildungen darstellen.
 #lorem(10)@private_equity
 #lorem(10)@lemons
 #lorem(10)@vw
-#lorem(10)@kaiser2015
 #lorem(10)@theisen_ohnejahr
 
 = Fazit
