@@ -10,7 +10,8 @@
   abgabedatum: "",
   
   date: none,
-  logo: image("media/fomLogo.pdf"),
+  logo: "media/fomLogo.pdf",
+  bib-file: "literature.yaml",
   abbreviations: none,
   list-of-figures: false,
   list-of-tables: false,
@@ -77,7 +78,7 @@
   
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
   if logo != none {
-    align(center, image("media/fomLogo.pdf", width: 26%))
+    align(center, image(logo, width: 26%))
   }
 
   align(center)[
@@ -146,6 +147,9 @@
     pagebreak()
   }
 
+  [#label("end-of-preface")]
+  // Label, um römische Seitenzahl zu merken und später dort weiter zu zählen
+
 // Inhalt ====================================================================
 
   counter(page).update(1)
@@ -155,9 +159,14 @@
   pagebreak()
   
 // Literaturverzeichnis ======================================================
-  counter(page).update(6)
+  counter(page).update(loc => {
+    let end-page = counter(page).at(loc.select(<end-of-preface>)).first()
+    return end-page + 1
+  })
+  // Letzte römische Seitenzahl wird abgefragt und als aktuelle Seitenzahl+1 gesetzt
   set page(numbering: "I")
-  bibliography("literature.yaml", title: "Literaturverzeichnis", style: "fom-chigaco-citation.csl")
+  if bib-file != none {
+    bibliography(bib-file, title: "Literaturverzeichnis", style: "fom-chigaco-citation.csl")}
 
 // Internetquellen ======================================================
   //pagebreak()
