@@ -1,17 +1,18 @@
 //#import "/lib.typ": * 
 //Für lokale Entwicklung bitte einkommentieren
 
-#import "@preview/fom-thesis-unofficial:0.1.0": *
+//#import "@preview/fom-thesis-unofficial:0.1.0": *
+#import "@local/fom-thesis-unofficial:0.1.0": *
 
 // META INFORMATIONEN FÜLLEN:
 #show: project.with(
-  title: "...",
+  title: "Hier könnte Ihr Titel stehen!",
   authors: "Max Mustermann",
   studiengang: "Wirtschaftsinformatik",
   akademischer_grad: "Bachelor of Science (B.Sc.)",
   dokumentart: "Seminararbeit",
-  matrikelnummer: "123456",
-  betreuer: "Prof. Dr. Max Mustermann",
+  matrikelnummer: "361710",
+  betreuer: "Prof. Dr. Maria Musterfrau",
   abgabedatum: "01.04.2026",
 
   
@@ -31,43 +32,43 @@
 #lorem(20)
 
 == Zielsetzung
-#lorem(40)
+#lorem(20)
 
 == Vorgehensweise
-#lorem(500)
+#lorem(20)
 
 = Erste Ebene
-#lorem(500)
+#lorem(20)
 #figure(
-  image("/template/media/Finn_Riedel-DSCF5642.jpg", width: 20%),
+  image("/media/Finn_Riedel-DSCF5642.jpg", width: 20%),
   caption: [Städel Museum, Frankfurt am Main (C) Finn Riedel]
 ) <staedel_museum>
 
-Wie man am @staedel_museum sehen kann, kann man auch Abbildungen darstellen.
+Wie man an @staedel_museum sehen kann, kann man auch Abbildungen darstellen.
 
 == Zweite Ebene
-#lorem(500)
+#lorem(20)
 
 == Zweite Ebene
-#lorem(100)
+#lorem(20)
 #figure(
-  ```rust
-  fn main() {
-      println!("Hello World!");
-  }
+  ```py
+    x = 15
+    y = 10
+    print(x+y)
   ```,
-  caption: ["Hello World" in Rust]
-)
-#lorem(30)
+  caption: [Addition in Python]
+) <addition_py>
+#lorem(20)
 
 === Dritte Ebene
-#lorem(500)
+#lorem(20)
 
 === Dritte Ebene
-#lorem(500)
+#lorem(20)
 
 = Erste Ebene
-#lorem(500)
+#lorem(20)
 #lorem(10)@unternehmensbewertung
 #lorem(10)@personal
 #lorem(10)@wissenschaftliches_arbeiten
@@ -77,3 +78,4 @@ Wie man am @staedel_museum sehen kann, kann man auch Abbildungen darstellen.
 #lorem(10)@vw
 
 = Fazit
+Fertig!

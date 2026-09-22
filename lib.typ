@@ -10,7 +10,7 @@
   abgabedatum: "",
   
   date: none,
-  logo: "template/media/fomLogo.pdf",
+  logo: "media/fomLogo.pdf",
   bib-file: "template/references.yaml",
   abbreviations: none,
   list-of-figures: false,
@@ -67,7 +67,8 @@
   
   set heading(numbering: "1.1")
 
-
+  // Code-Block als "Abbildung" deklarieren
+  show figure.where(kind: raw): set figure(kind: image)
 
 
   
@@ -152,10 +153,7 @@
     outline(title: none, target: figure.where(kind: image))
     pagebreak()
   }
-
-  [#label("end-of-preface")]
-  // Label, um römische Seitenzahl zu merken und später dort weiter zu zählen
-
+  
   let preface-state = state("preface-state", 1)
   context preface-state.update(counter(page).get().first())
   // Römische Seitenzahl zwischenspeichern, vor Inhalt
