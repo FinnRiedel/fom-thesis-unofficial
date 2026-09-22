@@ -1,3 +1,6 @@
+//#import "/lib.typ": * 
+//Für lokale Entwicklung bitte einkommentieren
+
 #import "@preview/fom-thesis-unofficial:0.1.0": project
 
 // META INFORMATIONEN FÜLLEN:
@@ -36,11 +39,11 @@
 = Erste Ebene
 #lorem(500)
 #figure(
-  image("/media/fomLogo.pdf", width: 20%),
-  caption: [FOM Logo]
-) <fom_logo>
+  image("/template/media/Finn_Riedel-DSCF5642.jpg", width: 20%),
+  caption: [Städel Museum, Frankfurt am Main (C) Finn Riedel]
+) <staedel_museum>
 
-Wie man in @fom_logo sehen kann, ist das ganz Toll.
+Wie man am @staedel_museum sehen kann, kann man auch Abbildungen darstellen.
 
 == Zweite Ebene
 #lorem(500)

@@ -11,7 +11,7 @@
   
   date: none,
   logo: "media/fomLogo.pdf",
-  bib-file: "literature.yaml",
+  bib-file: "references.yaml",
   abbreviations: none,
   list-of-figures: false,
   list-of-tables: false,
