@@ -1,5 +1,5 @@
 //#import "/lib.typ": * 
-// #import "@local/fom-thesis-unofficial:0.1.0": *
+//#import "@local/fom-thesis-unofficial:0.1.0": *
 //Für lokale Entwicklung bitte einkommentieren
 
 #import "@preview/fom-thesis-unofficial:0.1.0": *
@@ -9,7 +9,7 @@
   title: "Hier könnte Ihr Titel stehen!",
   authors: "Max Mustermann",
   studiengang: "Wirtschaftsinformatik",
-  akademischer_grad: "Bachelor of Science (B.Sc.)",
+  akademischer-grad: "Bachelor of Science (B.Sc.)",
   dokumentart: "Seminararbeit",
   matrikelnummer: "361710",
   betreuer: "Prof. Dr. Maria Musterfrau",
@@ -55,7 +55,7 @@
 = Erste Ebene
 #lorem(20)
 #figure(
-  image("/media/Finn_Riedel_FOM_Koeln_Rheinauhafen.JPG", width: 60%),
+  image("media/Finn_Riedel_FOM_Koeln_Rheinauhafen.JPG", width: 60%),
   caption: [FOM Aussicht, Rheinauhafen, Köln (C) Finn Riedel]
 ) <fom_cgn>
 
