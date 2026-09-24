@@ -1,8 +1,8 @@
 //#import "/lib.typ": * 
-//#import "@local/fom-thesis-unofficial:0.1.0": *
+#import "@local/fom-thesis-unofficial:0.1.0": *
 //Für lokale Entwicklung bitte einkommentieren
 
-#import "@preview/fom-thesis-unofficial:0.1.0": *
+//#import "@preview/fom-thesis-unofficial:0.1.0": *
 
 // META INFORMATIONEN FÜLLEN:
 #show: project.with(
@@ -17,6 +17,8 @@
 
   
   date: "March 16, 2026",
+
+  logo: "template/media/example-logo.png", // --!-REPLACE LOGO WITH YOUR FILE HERE-!--
 
   bib-file: bibliography("references.yaml", title: "Literaturverzeichnis"),
   bib-web-file: bibliography("references_web.yaml", title: "Internetquellen"),
